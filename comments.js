@@ -4,6 +4,7 @@ var url = require('url');
 var fs = require('fs');
 var path = require('path');
 var comments = [];
+
 var server = http.createServer(function(request, response) {
     var parsedUrl = url.parse(request.url, true);
     var pathname = parsedUrl.pathname;
